@@ -269,6 +269,7 @@ header .desktop-header .cart-btn {
 header .desktop-header .cart-btn a {
   text-decoration: none;
   text-transform: uppercase;
+  color: black;
 }
 header .desktop-header .cart-btn a:hover {
   color: #CB212A;
@@ -387,16 +388,16 @@ header .mobile-header .menu-open {
 }
 .body .mobile-hero h1 {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 .body .mobile-hero button {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -450,7 +451,6 @@ header .mobile-header .menu-open {
 }
 .body .yellow {
   background-color: #FCB614;
-  border-radius: 25px;
 }
 @media (max-width: 800px) {
   .body .yellow {
@@ -458,7 +458,7 @@ header .mobile-header .menu-open {
   }
 }
 .carousel {
-  width: 100%;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -466,7 +466,9 @@ header .mobile-header .menu-open {
   height: 500px;
   position: relative;
   overflow: hidden;
-  margin-top: 16px;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 @media (min-width: 1200px) {
   .carousel {
