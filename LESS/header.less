@@ -3,15 +3,24 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #FCB614;
+    max-height: 100px;
+    @media(max-width: 800px){
+        flex-direction: column;
+        justify-content: center;
+        max-height: 150px;
+    }
     nav {
         display: flex;
-        width: 30%;
+        width: 40%;
         align-items: center;
         justify-content: space-between;
+        @media(max-width:800px){
+            width: 100%;
+            justify-content: space-around;
+        }
         a {
             font-size: 1.5rem;
             text-decoration: none;
-            font-family: "Unite", sans-serif;
             text-transform: uppercase;
             color: black;
             &:hover {
@@ -19,14 +28,26 @@ header {
                 text-decoration: underline;
             }
         }
+        .mobile-cart {
+            display: none;
+            @media(max-width:800px) {
+                display: inline;
+            }
+        }
     }
     .logo {
         margin: 30px 0px 30px 0px;
         width: 20%;
+        @media(max-width:800px){
+            width:15%;
+        }
         img {
-            max-height: 80px;
+            max-height: 70px;
             max-width: 100%;
             background-color: white;
+            @media(max-width:800px){
+                margin: auto;
+            }
             &:hover {
                 background-color: black;
             }
@@ -37,9 +58,11 @@ header {
         width: 20%;
         display: flex;
         justify-content: flex-end;
+        @media (max-width:800px){
+            display:none;
+        }
         a {
             text-decoration: none;
-            font-family: "Unite", sans-serif;
             text-transform: uppercase;
             &:hover {
                 color: #CB212A;
