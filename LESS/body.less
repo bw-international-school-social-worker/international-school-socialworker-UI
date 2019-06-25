@@ -2,13 +2,15 @@
     width: 100%;
     height: auto;
     .hero {
+        width:100%;
         @media(max-width: 600px){
             display: none;
         }
         img {
-            max-width: 100%;
+            width: 100%;
         }
         h1 {
+            width: 100%;
             position: absolute;
             top: 40%;
             left: 50%;
@@ -16,7 +18,7 @@
             color: white;
             text-align: center;
             @media(max-width: 800px){
-                top: 25%;
+                top: 35%;
             }
         }
         button {
@@ -25,12 +27,13 @@
             left: 50%;
             transform: translate(-50%, -50%);
             @media(max-width: 800px){
-                top: 33%;
+                top: 43%;
             }
         }
     }
     .mobile-hero {
         display:none;
+        margin-top: 50px;
         @media(max-width:600px){
             display:inline;
         }

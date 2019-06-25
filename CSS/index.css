@@ -342,15 +342,19 @@ header .mobile-header .menu-open {
   width: 100%;
   height: auto;
 }
+.body .hero {
+  width: 100%;
+}
 @media (max-width: 600px) {
   .body .hero {
     display: none;
   }
 }
 .body .hero img {
-  max-width: 100%;
+  width: 100%;
 }
 .body .hero h1 {
+  width: 100%;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -360,7 +364,7 @@ header .mobile-header .menu-open {
 }
 @media (max-width: 800px) {
   .body .hero h1 {
-    top: 25%;
+    top: 35%;
   }
 }
 .body .hero button {
@@ -371,11 +375,12 @@ header .mobile-header .menu-open {
 }
 @media (max-width: 800px) {
   .body .hero button {
-    top: 33%;
+    top: 43%;
   }
 }
 .body .mobile-hero {
   display: none;
+  margin-top: 50px;
 }
 @media (max-width: 600px) {
   .body .mobile-hero {
