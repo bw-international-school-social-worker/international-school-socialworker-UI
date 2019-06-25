@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Unite", sans-serif;
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+  padding-bottom: 20px;
+}
+p {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+button {
+  color: white;
+  background-color: #FCB614;
+  font-size: 2rem;
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px 25px 5px 25px;
+  border-radius: 25px;
+}
+button:hover {
+  color: black;
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FCB614;
+  max-height: 100px;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    max-height: 150px;
+  }
+}
+header nav {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+header nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+header nav a:hover {
+  color: #CB212A;
+  text-decoration: underline;
+}
+header nav .mobile-cart {
+  display: none;
+}
+@media (max-width: 800px) {
+  header nav .mobile-cart {
+    display: inline;
+  }
+}
+header .logo {
+  margin: 30px 0px 30px 0px;
+  width: 20%;
+}
+@media (max-width: 800px) {
+  header .logo {
+    width: 15%;
+  }
+}
+header .logo img {
+  max-height: 70px;
+  max-width: 100%;
+  background-color: white;
+}
+@media (max-width: 800px) {
+  header .logo img {
+    margin: auto;
+  }
+}
+header .logo img:hover {
+  background-color: black;
+}
+header .cart-btn {
+  font-size: 1.5rem;
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 800px) {
+  header .cart-btn {
+    display: none;
+  }
+}
+header .cart-btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .cart-btn a:hover {
+  color: #CB212A;
+  text-decoration: underline;
+}
+.body {
+  width: 100%;
+  height: auto;
+}
+.body .hero img {
+  max-width: 100%;
+}
+.body .hero h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .body .hero h1 {
+    top: 30%;
+  }
+}
+.body .hero button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 800px) {
+  .body .hero button {
+    top: 40%;
+  }
+}
+.body .info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  .body .info {
+    flex-direction: column;
+  }
+}
+.body .info .info-text {
+  max-width: 40%;
+  margin: 3.3%;
+}
+@media (max-width: 800px) {
+  .body .info .info-text {
+    max-width: 95%;
+    margin: 2.5%;
+  }
+}
+.body .info .info-img {
+  max-width: 40%;
+  margin: 3.3%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .body .info .info-img {
+    max-width: 95%;
+    margin: 2.5%;
+  }
+}
+.body .info .info-img img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+.body .yellow {
+  background-color: #FCB614;
+}
+@media (max-width: 800px) {
+  .body .yellow {
+    flex-direction: column-reverse;
+  }
+}
