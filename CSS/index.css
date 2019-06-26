@@ -600,6 +600,7 @@ header .mobile-header .menu-open {
   width: 330px;
   height: auto;
   border-radius: 25px;
+  margin: auto;
   margin-bottom: 20px;
   background-color: #FCB614;
 }
