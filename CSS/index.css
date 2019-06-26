@@ -373,27 +373,17 @@ header .mobile-header .menu-open {
   margin-bottom: 0px;
   width: 100%;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
 }
-@media (max-width: 800px) {
-  .body .hero h1 {
-    top: 35%;
-  }
-}
 .body .hero button {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media (max-width: 800px) {
-  .body .hero button {
-    top: 43%;
-  }
 }
 .body .mobile-hero {
   display: none;
