@@ -23,16 +23,18 @@ header {
         }
         nav {
             display: flex;
-            width: 40%;
-            min-width: 450px;
+            width: 45%;
+            min-width: 100px;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             @media(max-width:800px){
                 width: 100%;
+                padding: 0;
                 justify-content: space-around;
             }
             a {
                 font-size: 1.5rem;
+                padding: 15px;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: black;
@@ -42,6 +44,8 @@ header {
                 }
                 @media (max-width: 800px){
                     margin-bottom: 10px;
+                    width: 33%;
+                    text-align: center;
                 }
             }
             .mobile-cart {

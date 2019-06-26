@@ -198,19 +198,21 @@ header .desktop-header {
 }
 header .desktop-header nav {
   display: flex;
-  width: 40%;
-  min-width: 450px;
+  width: 45%;
+  min-width: 100px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media (max-width: 800px) {
   header .desktop-header nav {
     width: 100%;
+    padding: 0;
     justify-content: space-around;
   }
 }
 header .desktop-header nav a {
   font-size: 1.5rem;
+  padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -222,6 +224,8 @@ header .desktop-header nav a:hover {
 @media (max-width: 800px) {
   header .desktop-header nav a {
     margin-bottom: 10px;
+    width: 33%;
+    text-align: center;
   }
 }
 header .desktop-header nav .mobile-cart {
@@ -342,6 +346,17 @@ header .mobile-header .menu-open {
   width: 100%;
   height: auto;
 }
+.body h1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .body h1 {
+    margin-top: 100px;
+  }
+}
 .body .hero {
   width: 100%;
 }
@@ -354,6 +369,8 @@ header .mobile-header .menu-open {
   width: 100%;
 }
 .body .hero h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   width: 100%;
   position: absolute;
   top: 40%;
@@ -392,6 +409,8 @@ header .mobile-header .menu-open {
   filter: brightness(70%);
 }
 .body .mobile-hero h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   position: absolute;
   top: 25%;
   left: 50%;
@@ -517,6 +536,8 @@ header .mobile-header .menu-open {
   filter: brightness(70%);
 }
 .carousel h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   position: absolute;
   width: 90%;
   top: 40%;
@@ -550,6 +571,53 @@ header .mobile-header .menu-open {
   .carousel button {
     top: 50%;
   }
+}
+.our-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  max-width: 1050px;
+  max-height: 1100px;
+  flex-direction: column;
+  margin: auto;
+}
+@media (max-width: 1050px) {
+  .our-team-container {
+    max-height: 1500px;
+  }
+}
+@media (max-width: 700px) {
+  .our-team-container {
+    max-height: 3000px;
+  }
+}
+.our-team-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black;
+  width: 330px;
+  height: auto;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #FCB614;
+}
+.our-team-container .card h2 {
+  margin: 15px 15px 0 15px;
+  padding: 0;
+  width: 100%;
+}
+.our-team-container .card h3 {
+  font-size: 2rem;
+  margin: 0 0 0 15px;
+}
+.our-team-container .card img {
+  max-height: 350px;
+  max-width: 300px;
+  margin: 15px;
+  border-radius: 25px;
+  filter: grayscale(50%);
 }
 footer {
   display: flex;
