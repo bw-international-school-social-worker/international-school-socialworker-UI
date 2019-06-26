@@ -360,7 +360,7 @@ header .mobile-header .menu-open {
 .body .hero {
   width: 100%;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .body .hero {
     display: none;
   }
@@ -387,15 +387,15 @@ header .mobile-header .menu-open {
 }
 .body .mobile-hero {
   display: none;
-  margin-top: 50px;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .body .mobile-hero {
     display: inline;
   }
 }
 .body .mobile-hero img {
   max-width: 100%;
+  margin-top: 50px;
   filter: brightness(70%);
 }
 .body .mobile-hero h1 {
