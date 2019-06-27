@@ -228,6 +228,29 @@ header .desktop-header nav a:hover {
     text-align: center;
   }
 }
+header .desktop-header nav .cta-btn {
+  display: inline;
+  margin-left: 50px;
+  padding: 16px 20px 15px 20px;
+  background-color: white;
+  color: #CB212A;
+  font-weight: bold;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+header .desktop-header nav .cta-btn:hover {
+  background: #CB212A;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  header .desktop-header nav .cta-btn {
+    margin-left: 0px;
+    padding: 15px 0px;
+    width: 33%;
+    text-align: center;
+  }
+}
 header .desktop-header .logo {
   margin: 30px 0px 30px 0px;
   width: 20%;
@@ -313,12 +336,18 @@ header .mobile-header .mobile-nav {
 }
 header .mobile-header .mobile-nav a {
   font-size: 3rem;
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px dashed black;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   text-decoration: none;
   color: black;
+}
+header .mobile-header .mobile-nav a:hover {
+  color: #CB212A;
+}
+header .mobile-header .mobile-nav a:active {
+  color: #CB212A;
 }
 header .mobile-header .menu-open {
   display: flex;
@@ -334,6 +363,19 @@ header .mobile-header .menu-open {
     top: 75px;
   }
 }
+.cta-btn {
+  display: inline;
+  margin-left: 30px;
+  padding: 50px 20px;
+  background-color: white;
+  color: #CB212A;
+  font-weight: bold;
+  border-radius: 25px;
+}
+.cta-btn:hover {
+  background: #CB212A;
+  color: white;
+}
 .body {
   width: 100%;
   height: auto;
@@ -344,7 +386,7 @@ header .mobile-header .menu-open {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .body h1 {
     margin-top: 100px;
   }

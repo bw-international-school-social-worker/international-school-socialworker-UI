@@ -48,6 +48,27 @@ header {
                     text-align: center;
                 }
             }
+            .cta-btn {
+                display: inline;
+                margin-left: 50px;
+                padding: 16px 20px 15px 20px;
+                background-color: white;
+                color: #CB212A;
+                font-weight: bold;
+                border-radius: 25px;
+                vertical-align: middle;
+                &:hover {
+                    background: #CB212A;
+                    color: white;
+                    text-decoration: none;    
+                }
+                @media (max-width: 800px){
+                    margin-left: 0px;
+                    padding: 15px 0px;
+                    width: 33%;
+                    text-align: center;
+                }
+            }
             
         }
         .logo {
@@ -132,13 +153,20 @@ header {
             animation-fill-mode: forwards;
             a {
                 font-size: 3rem;
-                border-bottom: 1px dashed grey;
+                border-bottom: 1px dashed black;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 padding-left: 20px;
                 text-decoration: none;
                 color: black;
+                &:hover {
+                    color: #CB212A;
+                }
+                &:active {
+                    color: #CB212A;
+                }
             }
+            
         }
         .menu-open {
             display: flex;
@@ -154,3 +182,17 @@ header {
 
 
 
+.cta-btn {
+    display: inline;
+    margin-left: 30px;
+    padding: 50px 20px;
+    // margin: auto;
+    background-color: white;
+    color: #CB212A;
+    font-weight: bold;
+    border-radius: 25px;
+    &:hover {
+        background: #CB212A;
+        color: white;
+    }
+}
